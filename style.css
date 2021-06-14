@@ -1,0 +1,56 @@
+body{height:100vh;
+    background-color:rgb(97,76,191);
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+
+input{font-size:1.5rem;
+    border:none;
+    border-radius:5px;}
+
+p{margin: 0;
+text-align:center;
+font-size:4.5rem;}
+
+.dateContainer{text-align: center;}
+
+.timerContainer{display:flex;
+    margin-top: 1rem;}
+
+.timerSection{margin-right:70px;
+    position:relative;}
+
+.timerSection:last-child{margin:0;}
+
+.timerSection::after{content:":";
+    width: 30px;
+    position:absolute;
+    right:-55px;
+    top:7px;
+    font-size:4.5rem;}
+
+.timerSection:last-child::after{display: none;}
+
+.hourStyle{
+    text-shadow: 5px 4px 5px black;
+}
+
+.timerLabel{font-size: 1.2rem;
+border-top-style: solid;
+border-width: 1px;}
+
+#startButton{font-size:1.5rem;
+    border:none;
+    border-radius:5px;
+    font-weight: 700;
+    
+    cursor:pointer;}
+
+button:hover{background-color:rgba(231, 189, 241, 0.993);}
+
+button:active{
+    transform:translatey(1px);
+}
+

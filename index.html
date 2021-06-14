@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dateContainer">
+            <input type="date" name="requestedDate" id="requestedDate">
+            <input type="time" name="requestedHour" id="requestedHour" value="00:00" onchange="bugFix(), changeTimer()">
+            <button id="startButton" onclick="changeTimer()">Iniciar</button>
+        </div>
+        <div class="timerContainer">
+            <div class="timerSection">
+                <p class="hourStyle"  id="timerDays">T</p>
+                <p class="timerLabel">DIAS</p>
+            </div>
+            <div class="timerSection">
+                <p class= "hourStyle" id="timerHours">I</p>
+                <p class="timerLabel">HORAS</p>
+            </div>
+            <div class="timerSection">
+                <p class="hourStyle" id="timerMinutes">M</p>
+                <p class="timerLabel">MINUTOS</p>
+            </div>
+            <div class="timerSection">
+                <p class="hourStyle" id="timerSeconds">E</p>
+                <p class="timerLabel">SEGUNDOS</p>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
